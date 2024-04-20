@@ -1,0 +1,43 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	1
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:58:6:virtual void MainView::tearDownScreen()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:290:8:touchgfx::Callback<MainView, const touchgfx::Image&, const touchgfx::ClickEvent&>::~Callback()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:318:18:void touchgfx::Callback<dest_type, T1, T2, void>::execute(T1, T2) [with dest_type = MainView; T1 = const touchgfx::Image&; T2 = const touchgfx::ClickEvent&]	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:328:18:bool touchgfx::Callback<dest_type, T1, T2, void>::isValid() const [with dest_type = MainView; T1 = const touchgfx::Image&; T2 = const touchgfx::ClickEvent&]	3
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:290:8:virtual touchgfx::Callback<MainView, const touchgfx::Image&, const touchgfx::ClickEvent&>::~Callback()	1
+../../TouchGFX/gui/include/gui/main_screen/MainView.hpp:12:13:MainView::~MainView()	1
+../../TouchGFX/gui/include/gui/main_screen/MainView.hpp:12:13:virtual MainView::~MainView()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Bitmap.hpp:142:14:touchgfx::BitmapId touchgfx::Bitmap::getId() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	1
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:6:1:MainView::MainView()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:357:10:void touchgfx::Circle::updateArc(T, T) [with T = int]	1
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:2137:6:virtual void MainView::setUpTemperature()	2
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:2157:6:virtual void MainView::setDownTemperature()	2
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:2818:6:void MainView::imageColorPickerClickHandler(const touchgfx::Image&, const touchgfx::ClickEvent&)	2
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:63:6:virtual void MainView::upPressed()	30
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:266:6:virtual void MainView::downPressed()	29
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:485:6:virtual void MainView::rightPressed()	13
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:591:6:virtual void MainView::leftPressed()	13
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:913:6:void MainView::updateTimerIcon()	3
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:925:6:void MainView::updateBoostIcon()	3
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:937:6:void MainView::updateEcoIcon()	3
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:949:6:void MainView::updateSilentIcon()	3
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:961:6:void MainView::updateAngleIcon()	3
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:47:6:virtual void MainView::setupScreen()	1
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:1804:6:void MainView::removeMenu(ShowingModeMenu&)	1
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:697:6:virtual void MainView::selectPressed()	42
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:973:6:virtual void MainView::handleTickEvent()	132
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:1826:6:virtual void MainView::showMenuMode()	10
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:1921:6:virtual void MainView::showMenuPlan()	9
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:1999:6:virtual void MainView::showMenuTimer()	10
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:2070:6:virtual void MainView::showMenuSetup()	8
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:2177:6:virtual void MainView::menu1Clicked()	7
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:2341:6:virtual void MainView::menu2Clicked()	8
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:2467:6:virtual void MainView::menu3Clicked()	8
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:2595:6:virtual void MainView::menu4Clicked()	9
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:2697:6:virtual void MainView::buttonDownClicked()	5
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:2737:6:virtual void MainView::topBackButtonClicked()	3
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:2783:6:virtual void MainView::topEditButtonClicked()	3
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:2807:6:virtual void MainView::handleClickEvent(const touchgfx::ClickEvent&)	2
+C:/TouchGFXProjects/MyApplication/TouchGFX/gui/src/main_screen/MainView.cpp:2830:6:virtual void MainView::handleDragEvent(const touchgfx::DragEvent&)	3

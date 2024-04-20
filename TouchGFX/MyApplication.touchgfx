@@ -1,0 +1,1510 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Main",
+        "CanvasBufferSize": 3600,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "main_bg",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "main_bg_image.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "ornament_right",
+            "X": 170,
+            "Y": 191,
+            "Width": 63,
+            "Height": 63,
+            "RelativeFilename": "right_ornament.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "ornament_left",
+            "X": 11,
+            "Y": 191,
+            "Width": 63,
+            "Height": 63,
+            "RelativeFilename": "left_ornament.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "arrow_down",
+            "X": 105,
+            "Y": 222,
+            "Width": 32,
+            "Height": 20,
+            "RelativeFilename": "arrow_down_normal.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "arrow_up",
+            "X": 105,
+            "Y": 95,
+            "Width": 32,
+            "Height": 20,
+            "RelativeFilename": "arrow_up_normal.png"
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "arrowDownFlexButton",
+            "X": 105,
+            "Y": 222,
+            "Width": 32,
+            "Height": 20,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "arrowUpFlexButton",
+            "X": 105,
+            "Y": 95,
+            "Width": 32,
+            "Height": 20,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Image",
+            "Name": "iconDegree",
+            "X": 185,
+            "Y": 121,
+            "Width": 18,
+            "Height": 18,
+            "RelativeFilename": "degree_big.png"
+          },
+          {
+            "Type": "Container",
+            "Name": "containerMainTopMenu",
+            "Y": 33,
+            "Width": 240,
+            "Height": 44,
+            "Components": [
+              {
+                "Type": "Image",
+                "Name": "iconTimer",
+                "X": 16,
+                "Width": 32,
+                "Height": 32,
+                "RelativeFilename": "icon_small_timer_normal.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textTimer",
+                "X": 13,
+                "Y": 32,
+                "Width": 36,
+                "Height": 9,
+                "TextId": "ICON_TIMER",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 179,
+                  "Blue": 104
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "Image",
+                "Name": "iconBoost",
+                "X": 63,
+                "Width": 32,
+                "Height": 32,
+                "RelativeFilename": "icon_small_boost_normal.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textBoost",
+                "X": 58,
+                "Y": 32,
+                "Width": 40,
+                "Height": 9,
+                "TextId": "ICON_BOOST",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 179,
+                  "Blue": 104
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "Image",
+                "Name": "iconEco",
+                "X": 107,
+                "Width": 32,
+                "Height": 32,
+                "RelativeFilename": "icon_small_eco_normal.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textEco",
+                "X": 110,
+                "Y": 32,
+                "Width": 23,
+                "Height": 9,
+                "TextId": "ICON_ECO",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 179,
+                  "Blue": 104
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "Image",
+                "Name": "iconSilent",
+                "X": 151,
+                "Width": 32,
+                "Height": 32,
+                "RelativeFilename": "icon_small_silent_normal.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textSilent",
+                "X": 145,
+                "Y": 32,
+                "Width": 42,
+                "Height": 9,
+                "TextId": "ICON_SILENT",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 179,
+                  "Blue": 104
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "Image",
+                "Name": "iconAngle",
+                "X": 195,
+                "Width": 32,
+                "Height": 32,
+                "RelativeFilename": "icon_small_angle_normal.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textAngle",
+                "X": 192,
+                "Y": 32,
+                "Width": 38,
+                "Height": 9,
+                "TextId": "ICON_ANGLE",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 179,
+                  "Blue": 104
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "containerBottomMenu",
+            "Y": 252,
+            "Width": 240,
+            "Height": 68,
+            "Components": [
+              {
+                "Type": "Image",
+                "Name": "background_menu_bottom_mode",
+                "Width": 60,
+                "Height": 68,
+                "RelativeFilename": "menu_buttom_normal.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "background_menu_bottom_plan",
+                "X": 60,
+                "Width": 60,
+                "Height": 68,
+                "RelativeFilename": "menu_buttom_normal.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "background_menu_bottom_timer",
+                "X": 120,
+                "Width": 60,
+                "Height": 68,
+                "RelativeFilename": "menu_buttom_normal.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "background_menu_bottom_setup",
+                "X": 180,
+                "Width": 60,
+                "Height": 68,
+                "RelativeFilename": "menu_buttom_normal.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "boxModeSelected",
+                "Width": 60,
+                "Height": 68,
+                "Visible": false,
+                "RelativeFilename": "menu_buttom_active.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "menuIconMode",
+                "X": 14,
+                "Y": 18,
+                "Width": 36,
+                "Height": 36,
+                "RelativeFilename": "icon_mode_normal.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "menuIconPlan",
+                "X": 74,
+                "Y": 18,
+                "Width": 36,
+                "Height": 36,
+                "RelativeFilename": "icon_plan_normal.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "menuIconTimer",
+                "X": 134,
+                "Y": 18,
+                "Width": 36,
+                "Height": 36,
+                "RelativeFilename": "icon_timer_normal.png"
+              },
+              {
+                "Type": "FlexButton",
+                "Name": "menuIconSetupFlexButton",
+                "X": 181,
+                "Y": 9,
+                "Width": 58,
+                "Height": 59,
+                "ButtonTrigger": {
+                  "Type": "ClickButtonTrigger"
+                },
+                "ButtonStyles": [
+                  {
+                    "Type": "BoxWithBorderButtonStyle",
+                    "BorderSize": 5,
+                    "ColorReleased": {
+                      "Green": 102,
+                      "Blue": 153
+                    },
+                    "ColorPressed": {
+                      "Green": 153,
+                      "Blue": 204
+                    },
+                    "ColorBorderReleased": {
+                      "Green": 51,
+                      "Blue": 102
+                    },
+                    "ColorBorderPressed": {
+                      "Red": 51,
+                      "Green": 102,
+                      "Blue": 153
+                    }
+                  }
+                ]
+              },
+              {
+                "Type": "FlexButton",
+                "Name": "menuIconModeFlexButton",
+                "Y": 9,
+                "Width": 58,
+                "Height": 59,
+                "ButtonTrigger": {
+                  "Type": "ClickButtonTrigger"
+                },
+                "ButtonStyles": [
+                  {
+                    "Type": "BoxWithBorderButtonStyle",
+                    "BorderSize": 5,
+                    "ColorReleased": {
+                      "Green": 102,
+                      "Blue": 153
+                    },
+                    "ColorPressed": {
+                      "Green": 153,
+                      "Blue": 204
+                    },
+                    "ColorBorderReleased": {
+                      "Green": 51,
+                      "Blue": 102
+                    },
+                    "ColorBorderPressed": {
+                      "Red": 51,
+                      "Green": 102,
+                      "Blue": 153
+                    }
+                  }
+                ]
+              },
+              {
+                "Type": "FlexButton",
+                "Name": "menuIconPlanFlexButton",
+                "X": 61,
+                "Y": 9,
+                "Width": 58,
+                "Height": 59,
+                "ButtonTrigger": {
+                  "Type": "ClickButtonTrigger"
+                },
+                "ButtonStyles": [
+                  {
+                    "Type": "BoxWithBorderButtonStyle",
+                    "BorderSize": 5,
+                    "ColorReleased": {
+                      "Green": 102,
+                      "Blue": 153
+                    },
+                    "ColorPressed": {
+                      "Green": 153,
+                      "Blue": 204
+                    },
+                    "ColorBorderReleased": {
+                      "Green": 51,
+                      "Blue": 102
+                    },
+                    "ColorBorderPressed": {
+                      "Red": 51,
+                      "Green": 102,
+                      "Blue": 153
+                    }
+                  }
+                ]
+              },
+              {
+                "Type": "FlexButton",
+                "Name": "menuIconTimerFlexButton",
+                "X": 120,
+                "Y": 9,
+                "Width": 58,
+                "Height": 59,
+                "ButtonTrigger": {
+                  "Type": "ClickButtonTrigger"
+                },
+                "ButtonStyles": [
+                  {
+                    "Type": "BoxWithBorderButtonStyle",
+                    "BorderSize": 5,
+                    "ColorReleased": {
+                      "Green": 102,
+                      "Blue": 153
+                    },
+                    "ColorPressed": {
+                      "Green": 153,
+                      "Blue": 204
+                    },
+                    "ColorBorderReleased": {
+                      "Green": 51,
+                      "Blue": 102
+                    },
+                    "ColorBorderPressed": {
+                      "Red": 51,
+                      "Green": 102,
+                      "Blue": 153
+                    }
+                  }
+                ]
+              },
+              {
+                "Type": "Image",
+                "Name": "menuIconSetup",
+                "X": 194,
+                "Y": 18,
+                "Width": 36,
+                "Height": 36,
+                "RelativeFilename": "icon_setup_normal.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textAreaMode",
+                "X": 16,
+                "Y": 53,
+                "Width": 32,
+                "Height": 9,
+                "TextId": "BUTTON_MODE",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 203,
+                  "Blue": 61
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textAreaPlan",
+                "X": 76,
+                "Y": 53,
+                "Width": 31,
+                "Height": 9,
+                "TextId": "BUTTON_PLAN",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 203,
+                  "Blue": 61
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textAreaTimer",
+                "X": 135,
+                "Y": 53,
+                "Width": 36,
+                "Height": 9,
+                "TextId": "BUTTON_TIMER",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 203,
+                  "Blue": 61
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textAreaSetup",
+                "X": 194,
+                "Y": 53,
+                "Width": 39,
+                "Height": 9,
+                "TextId": "BUTTON_SETUP",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 203,
+                  "Blue": 61
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "Image",
+                "Name": "menuDivider_1",
+                "X": 59,
+                "Y": 16,
+                "Width": 2,
+                "Height": 44,
+                "RelativeFilename": "menu_line.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "menuDivider_2",
+                "X": 119,
+                "Y": 16,
+                "Width": 2,
+                "Height": 44,
+                "RelativeFilename": "menu_line.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "menuDivider_3",
+                "X": 179,
+                "Y": 16,
+                "Width": 2,
+                "Height": 44,
+                "RelativeFilename": "menu_line.png"
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "containerSetTemperature",
+            "X": 51,
+            "Y": 119,
+            "Width": 141,
+            "Height": 100,
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "textAreaShadowSetTemperature",
+                "X": 6,
+                "Y": -27,
+                "Width": 129,
+                "Height": 189,
+                "TextId": "SET_TEMP",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 150,
+                  "Blue": 4
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "SingleUseId1",
+                  "UseBuffer": true,
+                  "BufferSize": 3
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textAreaSetTemperature",
+                "X": 6,
+                "Y": -30,
+                "Width": 129,
+                "Height": 189,
+                "TextId": "SET_TEMP",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 250,
+                  "Green": 206,
+                  "Blue": 39
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "SingleUseId1",
+                  "UseBuffer": true,
+                  "BufferSize": 3
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "containerMenu1",
+            "Y": 227,
+            "Width": 240,
+            "Height": 34,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "Image",
+                "Name": "menuBackground1",
+                "Width": 240,
+                "Height": 34,
+                "RelativeFilename": "menu_button_normal.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textAreaMenu1",
+                "X": 60,
+                "Y": 7,
+                "Width": 120,
+                "Height": 22,
+                "TextId": "MENU_ECO",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 150,
+                  "Blue": 4
+                }
+              },
+              {
+                "Type": "Image",
+                "Name": "arrowMenu1",
+                "X": 215,
+                "Y": 8,
+                "Width": 18,
+                "Height": 18,
+                "Visible": false,
+                "RelativeFilename": "menu_arrow_normal.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "iconMenu1",
+                "X": 10,
+                "Y": 8,
+                "Width": 18,
+                "Height": 18,
+                "RelativeFilename": "menu_icon_eco.png"
+              },
+              {
+                "Type": "FlexButton",
+                "Name": "menu1FlexButton",
+                "Width": 240,
+                "Height": 34,
+                "ButtonTrigger": {
+                  "Type": "ClickButtonTrigger"
+                },
+                "ButtonStyles": [
+                  {
+                    "Type": "BoxWithBorderButtonStyle",
+                    "BorderSize": 5,
+                    "ColorReleased": {
+                      "Green": 102,
+                      "Blue": 153
+                    },
+                    "ColorPressed": {
+                      "Green": 153,
+                      "Blue": 204
+                    },
+                    "ColorBorderReleased": {
+                      "Green": 51,
+                      "Blue": 102
+                    },
+                    "ColorBorderPressed": {
+                      "Red": 51,
+                      "Green": 102,
+                      "Blue": 153
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "containerMenu2",
+            "Y": 193,
+            "Width": 240,
+            "Height": 34,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "Image",
+                "Name": "menuBackground2",
+                "Width": 240,
+                "Height": 34,
+                "RelativeFilename": "menu_button_normal.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textAreaMenu2",
+                "X": 60,
+                "Y": 7,
+                "Width": 120,
+                "Height": 22,
+                "TextId": "MENU_BOOST",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 150,
+                  "Blue": 4
+                }
+              },
+              {
+                "Type": "Image",
+                "Name": "arrowMenu2",
+                "X": 215,
+                "Y": 9,
+                "Width": 18,
+                "Height": 18,
+                "Visible": false,
+                "RelativeFilename": "menu_arrow_normal.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "iconMenu2",
+                "X": 10,
+                "Y": 9,
+                "Width": 18,
+                "Height": 18,
+                "RelativeFilename": "menu_icon_boost.png"
+              },
+              {
+                "Type": "FlexButton",
+                "Name": "menu2FlexButton",
+                "Width": 240,
+                "Height": 34,
+                "ButtonTrigger": {
+                  "Type": "ClickButtonTrigger"
+                },
+                "ButtonStyles": [
+                  {
+                    "Type": "BoxWithBorderButtonStyle",
+                    "BorderSize": 5,
+                    "ColorReleased": {
+                      "Green": 102,
+                      "Blue": 153
+                    },
+                    "ColorPressed": {
+                      "Green": 153,
+                      "Blue": 204
+                    },
+                    "ColorBorderReleased": {
+                      "Green": 51,
+                      "Blue": 102
+                    },
+                    "ColorBorderPressed": {
+                      "Red": 51,
+                      "Green": 102,
+                      "Blue": 153
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "containerMenu3",
+            "Y": 159,
+            "Width": 240,
+            "Height": 34,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "Image",
+                "Name": "menuBackground3",
+                "Width": 240,
+                "Height": 34,
+                "RelativeFilename": "menu_button_normal.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textAreaMenu3",
+                "X": 60,
+                "Y": 6,
+                "Width": 120,
+                "Height": 22,
+                "TextId": "MENU_SILENT",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 150,
+                  "Blue": 4
+                }
+              },
+              {
+                "Type": "Image",
+                "Name": "arrowMenu3",
+                "X": 215,
+                "Y": 9,
+                "Width": 18,
+                "Height": 18,
+                "Visible": false,
+                "RelativeFilename": "menu_arrow_normal.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "iconMenu3",
+                "X": 10,
+                "Y": 9,
+                "Width": 18,
+                "Height": 18,
+                "RelativeFilename": "menu_icon_silent.png"
+              },
+              {
+                "Type": "FlexButton",
+                "Name": "menu3FlexButton",
+                "Width": 240,
+                "Height": 34,
+                "ButtonTrigger": {
+                  "Type": "ClickButtonTrigger"
+                },
+                "ButtonStyles": [
+                  {
+                    "Type": "BoxWithBorderButtonStyle",
+                    "BorderSize": 5,
+                    "ColorReleased": {
+                      "Green": 102,
+                      "Blue": 153
+                    },
+                    "ColorPressed": {
+                      "Green": 153,
+                      "Blue": 204
+                    },
+                    "ColorBorderReleased": {
+                      "Green": 51,
+                      "Blue": 102
+                    },
+                    "ColorBorderPressed": {
+                      "Red": 51,
+                      "Green": 102,
+                      "Blue": 153
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "containerMenu4",
+            "Y": 125,
+            "Width": 240,
+            "Height": 34,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "Image",
+                "Name": "menuBackground4",
+                "Width": 240,
+                "Height": 34,
+                "RelativeFilename": "menu_button_normal.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textAreaMenu4",
+                "X": 60,
+                "Y": 7,
+                "Width": 120,
+                "Height": 22,
+                "TextId": "MENU_FAN_ANGLE",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 150,
+                  "Blue": 4
+                },
+                "Alpha": 140
+              },
+              {
+                "Type": "Image",
+                "Name": "arrowMenu4",
+                "X": 215,
+                "Y": 8,
+                "Width": 18,
+                "Height": 18,
+                "Visible": false,
+                "RelativeFilename": "menu_arrow_normal.png",
+                "Alpha": 160
+              },
+              {
+                "Type": "Image",
+                "Name": "iconMenu4",
+                "X": 10,
+                "Y": 8,
+                "Width": 18,
+                "Height": 18,
+                "RelativeFilename": "menu_icon_fan_angle.png",
+                "Alpha": 180
+              },
+              {
+                "Type": "FlexButton",
+                "Name": "menu4FlexButton",
+                "Width": 240,
+                "Height": 34,
+                "ButtonTrigger": {
+                  "Type": "ClickButtonTrigger"
+                },
+                "ButtonStyles": [
+                  {
+                    "Type": "BoxWithBorderButtonStyle",
+                    "BorderSize": 5,
+                    "ColorReleased": {
+                      "Green": 102,
+                      "Blue": 153
+                    },
+                    "ColorPressed": {
+                      "Green": 153,
+                      "Blue": 204
+                    },
+                    "ColorBorderReleased": {
+                      "Green": 51,
+                      "Blue": 102
+                    },
+                    "ColorBorderPressed": {
+                      "Red": 51,
+                      "Green": 102,
+                      "Blue": 153
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "Image",
+            "Name": "menuIconSelected",
+            "X": 215,
+            "Y": 202,
+            "Width": 18,
+            "Height": 18,
+            "Visible": false,
+            "RelativeFilename": "selected_icons.png"
+          },
+          {
+            "Type": "Container",
+            "Name": "containerMenuDown",
+            "X": 89,
+            "Y": 95,
+            "Width": 58,
+            "Height": 30,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "Image",
+                "Name": "menuTabDown",
+                "Width": 58,
+                "Height": 30,
+                "RelativeFilename": "tab_top.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "menuDownIcon",
+                "X": 20,
+                "Y": 8,
+                "Width": 18,
+                "Height": 18,
+                "RelativeFilename": "arrow_tab_normal.png"
+              },
+              {
+                "Type": "FlexButton",
+                "Name": "menuDownFlexButton",
+                "Width": 58,
+                "Height": 30,
+                "ButtonTrigger": {
+                  "Type": "ClickButtonTrigger"
+                },
+                "ButtonStyles": [
+                  {
+                    "Type": "ImageButtonStyle",
+                    "ImageReleased": "arraow_tab_button_normal.png",
+                    "ImagePressed": "arraow_tab_button_active.png"
+                  },
+                  {
+                    "Type": "BoxWithBorderButtonStyle",
+                    "BorderSize": 5,
+                    "ColorReleased": {
+                      "Green": 102,
+                      "Blue": 153
+                    },
+                    "ColorPressed": {
+                      "Green": 153,
+                      "Blue": 204
+                    },
+                    "ColorBorderReleased": {
+                      "Green": 51,
+                      "Blue": 102
+                    },
+                    "ColorBorderPressed": {
+                      "Red": 51,
+                      "Green": 102,
+                      "Blue": 153
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "Image",
+            "Name": "imagePlan",
+            "Y": 60,
+            "Width": 240,
+            "Height": 200,
+            "Visible": false,
+            "RelativeFilename": "day_plan.png"
+          },
+          {
+            "Type": "Container",
+            "Name": "containerTopMenu",
+            "Y": 20,
+            "Width": 240,
+            "Height": 40,
+            "Visible": false,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "Image",
+                "Name": "backgroundTopMenu",
+                "Width": 240,
+                "Height": 40,
+                "RelativeFilename": "top_secundary_menu.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textTopMenu",
+                "X": 72,
+                "Y": 9,
+                "Width": 105,
+                "Height": 22,
+                "TextId": "TOP_MENU_DAY",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 215
+                }
+              },
+              {
+                "Type": "Image",
+                "Name": "lineEditTopMenu",
+                "X": 200,
+                "Y": 36,
+                "Width": 40,
+                "Height": 4,
+                "RelativeFilename": "sec_menu_menuline_normal.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "lineBackTopMenu",
+                "Y": 36,
+                "Width": 40,
+                "Height": 4,
+                "RelativeFilename": "sec_menu_menuline_normal.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "backgroundTopMenuButton",
+                "Width": 40,
+                "Height": 40,
+                "Visible": false,
+                "RelativeFilename": "sec_menu_menuline_active.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "iconEditTopMenu",
+                "X": 211,
+                "Y": 11,
+                "Width": 18,
+                "Height": 18,
+                "RelativeFilename": "edit_top_menu_normal.png",
+                "Alpha": 140
+              },
+              {
+                "Type": "Image",
+                "Name": "iconBackTopMenu",
+                "X": 11,
+                "Y": 11,
+                "Width": 18,
+                "Height": 18,
+                "RelativeFilename": "arrow_go_back_top_menu_normal.png"
+              },
+              {
+                "Type": "FlexButton",
+                "Name": "backTopFlexButton",
+                "Width": 40,
+                "Height": 40,
+                "ButtonTrigger": {
+                  "Type": "ClickButtonTrigger"
+                },
+                "ButtonStyles": [
+                  {
+                    "Type": "BoxWithBorderButtonStyle",
+                    "BorderSize": 5,
+                    "ColorReleased": {
+                      "Green": 102,
+                      "Blue": 153
+                    },
+                    "ColorPressed": {
+                      "Green": 153,
+                      "Blue": 204
+                    },
+                    "ColorBorderReleased": {
+                      "Green": 51,
+                      "Blue": 102
+                    },
+                    "ColorBorderPressed": {
+                      "Red": 51,
+                      "Green": 102,
+                      "Blue": 153
+                    }
+                  }
+                ]
+              },
+              {
+                "Type": "FlexButton",
+                "Name": "editTopFlexButton",
+                "X": 200,
+                "Width": 40,
+                "Height": 40,
+                "ButtonTrigger": {
+                  "Type": "ClickButtonTrigger"
+                },
+                "ButtonStyles": [
+                  {
+                    "Type": "BoxWithBorderButtonStyle",
+                    "BorderSize": 5,
+                    "ColorReleased": {
+                      "Green": 102,
+                      "Blue": 153
+                    },
+                    "ColorPressed": {
+                      "Green": 153,
+                      "Blue": 204
+                    },
+                    "ColorBorderReleased": {
+                      "Green": 51,
+                      "Blue": 102
+                    },
+                    "ColorBorderPressed": {
+                      "Red": 51,
+                      "Green": 102,
+                      "Blue": 153
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "containerIdleCircles",
+            "X": 10,
+            "Y": 73,
+            "Width": 220,
+            "Height": 220,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "Circle",
+                "Name": "innerCircle",
+                "Width": 220,
+                "Height": 220,
+                "Color": {
+                  "Red": 250,
+                  "Green": 206,
+                  "Blue": 39
+                },
+                "CenterX": 110.0,
+                "CenterY": 110.0,
+                "Radius": 93.0,
+                "LineWidth": 8.0,
+                "StartAngle": 130.0,
+                "EndAngle": 310.0,
+                "CapPrecision": "Round"
+              },
+              {
+                "Type": "Circle",
+                "Name": "outerCircle",
+                "Width": 220,
+                "Height": 220,
+                "Color": {
+                  "Red": 250,
+                  "Green": 206,
+                  "Blue": 39
+                },
+                "CenterX": 110.0,
+                "CenterY": 110.0,
+                "Radius": 106.0,
+                "LineWidth": 8.0,
+                "StartAngle": -20.0,
+                "EndAngle": 160.0,
+                "CapPrecision": "Round"
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "containerColorPicker",
+            "Y": 71,
+            "Width": 240,
+            "Height": 240,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "Image",
+                "Name": "imageColorPicker",
+                "X": 16,
+                "Y": 16,
+                "Width": 208,
+                "Height": 208,
+                "RelativeFilename": "color_picker_circle.png",
+                "Clickable": true
+              },
+              {
+                "Type": "Image",
+                "Name": "imageSelecterColorPicker",
+                "X": 134,
+                "Y": 35,
+                "Width": 40,
+                "Height": 40,
+                "RelativeFilename": "colorwheel_picker.png"
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "InteractionUpKey",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 56
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "upPressed"
+            }
+          },
+          {
+            "InteractionName": "InteractionDownKey",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 50
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "downPressed"
+            }
+          },
+          {
+            "InteractionName": "InteractionRightKey",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 54
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "rightPressed"
+            }
+          },
+          {
+            "InteractionName": "InteractionLeftKey",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 52
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "leftPressed"
+            }
+          },
+          {
+            "InteractionName": "InteractionSelectKey",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 53
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "selectPressed"
+            }
+          },
+          {
+            "InteractionName": "showMenuMode",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "menuIconModeFlexButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "showMenuMode"
+            }
+          },
+          {
+            "InteractionName": "showMenuPlan",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "menuIconPlanFlexButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "showMenuPlan"
+            }
+          },
+          {
+            "InteractionName": "showMenuTimer",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "menuIconTimerFlexButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "showMenuTimer"
+            }
+          },
+          {
+            "InteractionName": "showMenuSetup",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "menuIconSetupFlexButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "showMenuSetup"
+            }
+          },
+          {
+            "InteractionName": "setUpTemperature",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "arrowUpFlexButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "setUpTemperature"
+            }
+          },
+          {
+            "InteractionName": "setDownTemperature",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "arrowDownFlexButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "setDownTemperature"
+            }
+          },
+          {
+            "InteractionName": "InteractionMenu1Clicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "menu1FlexButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "menu1Clicked"
+            }
+          },
+          {
+            "InteractionName": "InteractionMenu2Clicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "menu2FlexButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "menu2Clicked"
+            }
+          },
+          {
+            "InteractionName": "InteractionMenu3Clicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "menu3FlexButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "menu3Clicked"
+            }
+          },
+          {
+            "InteractionName": "Interactionmenu4Clicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "menu4FlexButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "menu4Clicked"
+            }
+          },
+          {
+            "InteractionName": "buttonDownClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "menuDownFlexButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "buttonDownClicked"
+            }
+          },
+          {
+            "InteractionName": "topBackButtonClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "backTopFlexButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "topBackButtonClicked"
+            }
+          },
+          {
+            "InteractionName": "topEditButtonClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "editTopFlexButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "topEditButtonClicked"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 240,
+      "Height": 320
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Main",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bppSerialFlash"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 240,
+        "Height": 320
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bppSerialFlash": {
+        "Id": "LCD16bppSerialFlash",
+        "IsEnabled": false
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Portrait",
+    "Family": "STM32G0",
+    "SubFamily": "STM32G0x1",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m0+",
+    "ProjectFile": "../STM32G071RB_NUCLEO_AZ2.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": []
+  },
+  "Version": "4.23.0",
+  "CreatedBy": "4.23.0"
+}
